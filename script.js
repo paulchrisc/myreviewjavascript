@@ -217,17 +217,58 @@
 // const weight = 70;
 // console.log(calculateBMI(height, weight));
 
-const sumArray = function (myArray) {
-  let sum = 0;
-  if (myArray.lenght < 1) {
-    return 0;
-  } else {
-    for (let i = 0; i < myArray.length; i++) {
-      sum += myArray[i];
-    }
-  }
-  return console.log(sum);
-};
-sumArray([1, 2, 3, 4, 5]);
-sumArray([10, -5, 3, 8]);
-sumArray([]);
+// const sumArray = function (myArray) {
+//   let sum = 0;
+//   if (myArray.lenght < 1) {
+//     return 0;
+//   } else {
+//     for (let i = 0; i < myArray.length; i++) {
+//       sum += myArray[i];
+//     }
+//   }
+//   return console.log(sum);
+// };
+// sumArray([1, 2, 3, 4, 5]);
+// sumArray([10, -5, 3, 8]);
+// sumArray([]);
+
+// const countVowels = function (str) {
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (vowels.includes(str[i])) count++;
+//   }
+//   return count;
+// };
+
+// console.log(countVowels("Hello"));
+// console.log(countVowels("world"));
+// console.log(countVowels("aeiou"));
+
+// const isPalindrome = function (str) {
+//   const strLower = str.toLowerCase();
+//   const removePunct = strLower.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+//   const strSplit = removePunct.split("");
+//   const strReverse = strSplit.slice().reverse();
+//   return strSplit.join("") === strReverse.join("");
+//   // if (strSplit == strReverse) {
+//   //   return true;
+//   // } else {
+//   //   return false;
+//   // }
+// };
+
+// console.log(isPalindrome("A man, a plan, a canal, Panama!"));
+
+// const isPalindrome = function (str) {
+//   const strLower = str.toLowerCase();
+//   const removePunct = strLower.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+//   const strSplit = removePunct.split("");
+//   const strReverse = strSplit.slice().reverse();
+//   return strSplit.join("") === strReverse.join("");
+// };
+
+// console.log(isPalindrome("A man, a plan, a canal, Panama!"));
+
+const str = "hello";
+console.log(str.reverse());
