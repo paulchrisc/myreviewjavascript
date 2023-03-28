@@ -130,25 +130,104 @@
 // };
 
 // reverseWords("Hello World");
-const isPrimeNumber = function (number) {
-  let isPrime = true;
-  if (number === 0) {
-    console.log("Number is not a composite or a prime number");
-  } else if (number > 1) {
-    for (let i = 2; i < number; i++) {
-      if (number % i == 0) {
-        isPrime = false;
-        break;
-      }
-    }
-    if (isPrime) {
-      console.log(`${number} is a Prime Number`);
-    } else {
-      console.log(`${number} is not a Prime Number`);
-    }
-  } else {
-    console.log(`The number is not a prime number`);
-  }
-};
+// const isPrimeNumber = function (number) {
+//   let isPrime = true;
+//   if (number === 0) {
+//     console.log("Number is not a composite or a prime number");
+//   } else if (number > 1) {
+//     for (let i = 2; i < number; i++) {
+//       if (number % i == 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//     if (isPrime) {
+//       console.log(`${number} is a Prime Number`);
+//     } else {
+//       console.log(`${number} is not a Prime Number`);
+//     }
+//   } else {
+//     console.log(`The number is not a prime number`);
+//   }
+// };
 
-isPrimeNumber(23);
+// isPrimeNumber(23);
+
+// const checkEvenOdd = function (number) {
+//   if (number % 2 === 0) {
+//     return "even";
+//   } else {
+//     return "odd";
+//   }
+// };
+
+// console.log(checkEvenOdd(5));
+
+// const reverseArray = function (myArray) {
+//   let newArray = myArray.reverse();
+//   return newArray;
+// };
+
+// const array1 = [3, 2, 1];
+// const array2 = [45, 6, 77];
+// const array3 = [99, 199, 288];
+// const array4 = [100, 101, 102];
+// console.log(reverseArray(array1));
+// console.log(reverseArray(array2));
+// console.log(reverseArray(array3));
+// console.log(reverseArray(array4));
+
+// Challenge: Write a function that takes in a string and returns the string with all its vowels removed.
+// For example, if the input is "hello world", the output should be "hll wrld".
+
+// const multiplyByTwo = function (myArray) {
+//   let newArray = [];
+//   for (let i = 0; i < myArray.length; i++) {
+//     newArray.push(myArray[i] * 2);
+//   }
+
+//   return newArray;
+// };
+
+// const array1 = [2, 4, 6];
+// const array2 = [4, 10, 14];
+// console.log(multiplyByTwo(array1));
+// console.log(multiplyByTwo(array2));
+
+// const findMax = function (myArray) {
+//   let max = myArray[0];
+//   for (let i = 0; i < myArray.length; i++) {
+//     if (max < myArray[i]) {
+//       max = myArray[i];
+//     }
+//   }
+//   return max;
+// };
+
+// const numbers = [10, 150, 20, 8];
+// findMax(numbers);
+// console.log(findMax(numbers));
+
+// const calculateBMI = function (height, weight) {
+//   let bmi = (weight / height ** 2 / 100) * 100;
+
+//   return bmi.toFixed(2);
+// };
+// const height = 1.75;
+// const weight = 70;
+// console.log(calculateBMI(height, weight));
+
+const sumArray = function (myArray) {
+  let sum = 0;
+  if (myArray.lenght < 1) {
+    return 0;
+  } else {
+    for (let i = 0; i < myArray.length; i++) {
+      sum += myArray[i];
+    }
+  }
+  return console.log(sum);
+};
+sumArray([1, 2, 3, 4, 5]);
+sumArray([10, -5, 3, 8]);
+sumArray([]);
