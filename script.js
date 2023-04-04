@@ -270,5 +270,5 @@
 
 // console.log(isPalindrome("A man, a plan, a canal, Panama!"));
 
-const str = "hello";
-console.log(str.reverse());
+// const str = "hello";
+// console.log(str.reverse());
